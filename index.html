@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charsets="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<header> <h1>CONVERSOR DE UNIDADES</h1></header>
+<div class = div1>
+    <select name = "lista" id = "selected" oninput="calcula()">
+        <option >Selección de unidad</option>
+        <option value="km">Kilómetros a millas</option>
+        <option value="mk">Millas a kilometros</option>
+        <option value="pm">Pies a metros</option>
+        <option value="mp">Metros a pies</option>
+        <option value="cp">Centímetros a pulgadas</option>
+        <option value="pc">Pulgadas a centímetros</option>
+    </select>
+    <br>
+    <br>
+
+    <div class = "cantidades">
+
+    <input type="number" name="cantidad" id="cantidad" step="0.01" oninput="calcula()">
+    <p id="unidad">Seleccione unidad</p>
+
+    
+        <button type="button" id="intercambiar"> <img src="https://img.myloview.es/vinilos/up-and-down-arrows-icon-vector-illustration-sort-button-sign-700-221807032.jpg" height ="15" width="15"/></button>
+        
+        <br><br>
+
+    <input type="number" name="resultado" id="result" >
+    <p id="resultado" >Seleccione unidad</p>
+		</div>
+
+    
+    <button type="button" id="guardar"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/640px-Heart_coraz%C3%B3n.svg.png" height ="15" width="15" /></button>
+    </div>
+
+    <button type="button" id="borrar"> <img src="https://www.pngall.com/wp-content/uploads/5/Delete-Red-X-Button-PNG-Picture.png" height ="15" width="15" /></button>
+
+    
+    
+    <br>
+    <br>
+
+    <br>
+    <div id="tabla" >GUARDADO</div>
+
+   
+    
+
+<script type="text/javascript" src="src/calcular.js"></script>
+<script type="text/javascript" src="src/cookies.js"></script>
+
+<style type="text/css" > @import 'style/css.css';
+</style>
+
+</body>
+</html>
